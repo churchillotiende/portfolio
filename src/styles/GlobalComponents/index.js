@@ -55,12 +55,13 @@ export const SectionTitle = styled.h2`
 `
 
 export const SectionText = styled.p`
-  max-width: 800px;
+  max-width: 600px;
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  /* color: rgba(255, 255, 255, 0.5); */
+  color:#b2a8a8;
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
@@ -278,4 +279,216 @@ export const LinkIconImg = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     height: ${({ large }) => large ? '32px' : '16px'};
   }
+`
+
+export const SidebarChat = styled.div`
+  display:grid;
+  place-items:center;
+  height:100vh;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 100%;
+    font-size: 20px;
+    height:100vh;
+    // padding-bottom: 24px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 16px;
+    line-height: 24px;
+   box-sizing:border-box;
+
+    &:nth-child(2n){
+      grid-row:2;
+      overflow:hidden ;
+      place-content:center ;
+    }
+  }
+`
+
+export const ChatBody = styled.div`
+  display:flex;
+  justify-content:space-between;
+  margin-left:20px;
+  height:90vh;
+  width:100%;
+  background-color:#0F1624;
+  margin: 0 auto;
+  max-width: 1040px;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  border-radius:10px;
+  box-shadow:-1px 4px 20px -6px rgba(0,0,0,0.75);
+
+  @media ${props => props.theme.breakpoints.lg} {
+    height: 90vh;
+
+  }
+
+  @media ${props => props.theme.breakpoints.md} {
+    overflow-x:scroll;
+    overflow-y:hidden;
+
+    ::-webkit-scrollbar{
+    display:none;
+    }
+
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+    
+  }
+
+  @media ${props => props.theme.breakpoints.sm} {
+    height: 90vh;
+    padding: 12px;
+    overflow-x:scroll;
+    overflow-y:hidden;
+
+    ::-webkit-scrollbar{
+    display:none;
+    }
+
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+    
+     &:nth-child(2n){
+      grid-row:2;
+   }
+  }
+`
+export const BoxChat = styled.div`
+  /* background: #212D45; */
+  border-radius: 12px;
+  height:100vh;
+  padding: 0px  24px 0px 24px;
+  @media ${props => props.theme.breakpoints.lg} {
+    padding: 0px  24px 0px 24px;
+
+  }
+
+  @media ${props => props.theme.breakpoints.md} {
+    height: 100vh;
+    padding: 0px  24px 0px 24px;
+    
+    // width:90vh;
+  }
+
+  @media ${props => props.theme.breakpoints.sm} {
+    height: 100vh;
+    padding: 0px  24px 0px 24px;
+    
+    &:nth-child(2n){
+      grid-row:2;
+    }
+  }
+`
+
+export const SidebarComp = styled.div`
+  display:flex;
+  border-right: 1px solid #212D45;
+  flex-direction:column;
+  flex:0.35;
+
+  @media ${props => props.theme.breakpoints.lg} {
+    height: 100vh;
+
+  }
+
+  @media ${props => props.theme.breakpoints.md} {
+    height: 100vh;
+  }
+
+  @media ${props => props.theme.breakpoints.sm} {
+    height: 100vh;
+    /* flex:1; */
+    
+    &:nth-child(2n){
+      grid-row:2;
+    }
+  }
+`
+
+export const ChatComp = styled.div`
+  display:flex;
+  flex-direction:column;
+  flex:0.7;
+
+  @media ${props => props.theme.breakpoints.lg} {
+    height: 100vh;
+
+  }
+
+  @media ${props => props.theme.breakpoints.md} {
+    height: 100vh;
+    flex:0.7;
+    margin-bottom: 16px;
+  }
+
+  @media ${props => props.theme.breakpoints.sm} {
+    /* display:none; */
+  }
+  `
+
+export const SidebarCss= styled.div`
+  display:flex;
+  flex:0.3;
+  flex-direction:column;
+
+  @media ${props => props.theme.breakpoints.lg} {
+    height: 100vh;
+
+  }
+
+  @media ${props => props.theme.breakpoints.md} {
+    height: 100vh;
+    padding:0px;
+    
+  }
+  @media ${props => props.theme.breakpoints.sm} {
+    height: 100vh;
+    border-right:none;
+    
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:nth-child(2n){
+      grid-row:2;
+    }
+`
+
+export const SidebarInfo = styled.div`
+  /* padding-left:15px; */
+  display:flex;
+  margin-top:10px;
+  cursor:pointer;
+
+  overflow-y:scroll ;
+
+  ::-webkit-scrollbar{
+    display:none;
+  }
+
+  -ms-overflow-style:none;
+  scrollbar-width:none;
+`
+
+export const SidebarTitle = styled.h2`
+  font-size:16px;
+  margin-bottom:8px;
+`
+
+export const ChatDiv = styled.div`
+  background-image: url('https://images.unsplash.com/photo-1546788774-2bb47f590283?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80');
+  height:100vh;
+`
+export const ChatName = styled.span`
+
+`
+export const ChatTimeStamp = styled.span`
+
 `

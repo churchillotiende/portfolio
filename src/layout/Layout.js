@@ -6,10 +6,12 @@ import { Container } from './LayoutStyles'
 
 export const Layout = ({children}) => {
   return (
+    <>
+    <Header style = {{maxWidth:'1400px'}}/>
     <Container>
-     <Header/>
      <main>{children}</main> 
      <Footer/>
     </Container>
+    </>
   )
 }

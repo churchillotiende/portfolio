@@ -6,6 +6,10 @@ export const Container = styled.div`
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
+  background-color:#131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   padding: 1rem;
   padding-top: 2rem;
 

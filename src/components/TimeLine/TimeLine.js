@@ -16,6 +16,7 @@ const Timeline = () => {
 
   const handleClick = (e, i) => {
     e.preventDefault();
+    href="https://github.com/churchillotiende"
 
     if (carouselRef.current) {
       const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
@@ -46,7 +47,7 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+        I am an ambitious intermediate developer who is willing to transform your ideas and opinions into awesome modern applications and also help with your existing projects
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

@@ -17,3 +17,18 @@ export const LeftSection = styled.div`
     margin: 0 auto;
   }
 `;
+
+export const RightSection = styled.div`
+  width:100%;
+  padding-top:200px;
+  font-size:30px;
+  display:flex ;
+  flex-direction:column;
+  margin:0 auto ;
+  margin-left:20px;
+
+  @media ${(props) => props.theme.breakpoints.md}{
+    padding-top:0;
+    margin-left:0 ;
+  }
+`;

@@ -8,8 +8,7 @@ const Technologies = () =>  (
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world.
-      From Back-end To Design
+      Have experience with HTML , SaaS, CSS , Python Flask , React JS  ,Node JS  ,MERN-stack , Material-Ui , Styled Components , antd , firebase , heroku , netlify , hostinger , webhostapp
     </SectionText>
     <List>
       <ListItem>
@@ -32,7 +31,7 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node and Databases
+            Node and Python Flask
           </ListParagraph>
         </ListContainer>
       </ListItem>
