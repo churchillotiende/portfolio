@@ -55,7 +55,7 @@ const Sidebar = () => {
               </HeaderLeft>
               <HeaderRight>
                 <IconButton>
-                  <Button style={{ cursor:'pointer', marginTop:'15px', borderRadius:'10px' , color:'white' , backgroundColor:"#212D45" }} onClick = {() => auth.signOut() && router.push('/')}><h2>Logout</h2></Button>
+                  <Button style={{ cursor:'pointer', marginTop:'15px', borderRadius:'10px' , color:'white' , backgroundColor:"#212D45" }} onClick = {() => auth.signOut()}><h2>Logout</h2></Button>
                 </IconButton>
               </HeaderRight>
             </>
