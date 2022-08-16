@@ -4,8 +4,6 @@ import Chat from './Chat';
 import Sidebar from './Sidebar';
 import Link from 'next/link';
 import {useAuthState} from 'react-firebase-hooks/auth';
-import { auth , db } from '../../firebase';
-import Chat1 from '../../pages/chat/[id]';
 import { ChannelMessage } from './Header.style';
 import styled from 'styled-components';
 
