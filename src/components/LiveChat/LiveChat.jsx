@@ -18,7 +18,7 @@ const LiveChat = () => {
         <Section id='chat'>
             <SectionTitle>Live Chat</SectionTitle>
             <ChannelMessage>
-                <P>Add churchillotiende84@gmail.com or winstoneotiende@gmail.com and let's talk</P>
+                <P>Add churchillotiende84@gmail.com or winstoneotiende@gmail.com and let's talk <br /> This is still under development...</P>
             </ChannelMessage>
             {/* <Chat1 /> */}
             <BoxChat>

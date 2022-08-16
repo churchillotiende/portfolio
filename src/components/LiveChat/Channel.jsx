@@ -23,7 +23,7 @@ const Channel = ({id , users}) => {
   const [recipientSnapShot] = useCollection(db.collection('users').where('email', '==' , getRecipientEmail(users  ,user)))
   const recipient = recipientSnapShot?.docs?.[0]?.data();
   return (
-      <Container onClick={enterChat}>
+      <Container>
         {
           recipient?(<Avatar src = {recipient?.photoURL}/>):(
             <Avatar>{recipientEmail[0]}</Avatar>

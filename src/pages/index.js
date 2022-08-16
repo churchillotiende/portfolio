@@ -12,7 +12,6 @@ import {auth, db} from '../firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useEffect } from 'react';
 import firebase from 'firebase';
-import Chat1 from './chat/[id]';
 
 const Home = () => {
   const [user] = useAuthState(auth);
