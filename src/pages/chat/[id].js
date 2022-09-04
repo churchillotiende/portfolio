@@ -3,12 +3,13 @@ import Sidebar from '../../components/LiveChat/Sidebar'
 import Chat from '../../components/LiveChat/Chat'
 import { BoxChat, ChatBody, ChatComp, Section, SectionTitle, SidebarChat, SidebarComp } from '../../styles/GlobalComponents';
 import { db } from '../../firebase';
+import Link  from 'next/link';
 
 const Chat1 = ({chat , messages}) => {
   return (
     <>
     {/* <Section id = 'chat'> */}
-      <SectionTitle>Live Chat </SectionTitle>
+      <Link href = '/'><SectionTitle style = {{cursor:'pointer'}}>Churchill. </SectionTitle></Link>
       {/* <BoxChat> */}
         {/* <SidebarChat> */}
           <ChatBody>
