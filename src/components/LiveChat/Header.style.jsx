@@ -43,6 +43,7 @@ export const HeaderAvatar = styled(Avatar)`
     :hover{
         opacity:0.8;
     }
+
 `;
 
 export const LastMessage = styled.div`

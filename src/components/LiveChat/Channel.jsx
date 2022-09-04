@@ -25,8 +25,8 @@ const Channel = ({id , users}) => {
   return (
       <Container onClick = {enterChat}>
         {
-          recipient?(<Avatar src = {recipient?.photoURL}/>):(
-            <Avatar>{recipientEmail[0]}</Avatar>
+          recipient?(<AvatarRec src = {recipient?.photoURL}/>):(
+            <AvatarRec>{recipientEmail[0]}</AvatarRec>
           )
 
         }
@@ -38,7 +38,7 @@ const Channel = ({id , users}) => {
 export default Channel;
 
 const Title = styled.p`
-    font-size:18px;
+    font-size:16px;
     width:100%;
     display:flex;
     word-break:break-word;
@@ -48,6 +48,10 @@ const Title = styled.p`
     &:hover{
         opacity:0.8;
     }
+
+    @media screen and (max-width: 500px) {
+    display: none;
+  }
 `
 
 const Container = styled.div`
@@ -57,3 +61,10 @@ const Container = styled.div`
     padding-top:0 ;
   }
 `;
+
+const AvatarRec = styled(Avatar)`
+  @media screen and (max-width: 500px) {
+        border-bottom:1px solid #212D45;
+        margin-bottom:20px;
+  }
+`

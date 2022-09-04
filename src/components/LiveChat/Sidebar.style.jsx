@@ -21,7 +21,9 @@ export const Span = styled.div`
     :hover{
         padding:0 ;
     }
-    /* scroll-width:0; */
+    @media screen and (max-width: 500px) {
+    font-size:12px;
+  }
 `;
 export const Hr = styled.div`
     border-bottom:1px solid #212D45;
