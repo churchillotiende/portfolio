@@ -38,7 +38,7 @@ const Chat = ({chat , messages}) => {
     const scrollToBottom = () => {
       endOfMessagesRef.current.scrollIntoView({
         behaviour:'smooth',
-        block:'start'
+        block:'end'
       })
     }
 

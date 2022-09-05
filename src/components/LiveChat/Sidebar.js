@@ -53,11 +53,11 @@ const Sidebar = () => {
                       <Avatar src = {user?.photoURL||user?.email[0]}/>
                   </HeaderAvatar>
               </HeaderLeft>
-              {/* <HeaderRight>
+              <HeaderRight>
                 <IconButton>
                   <Button style={{ cursor:'pointer', marginTop:'15px', borderRadius:'10px' , color:'white' , backgroundColor:"#212D45" }} onClick = {() => auth.signOut()}><h2>Logout</h2></Button>
                 </IconButton>
-              </HeaderRight> */}
+              </HeaderRight>
             </>
         </HeaderContainer>
         <SidebarOptionContainer onClick={addChannel}>
