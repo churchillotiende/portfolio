@@ -2,15 +2,14 @@ import styled from 'styled-components';
 
 export const SidebarOptionContainer = styled.div`
     display:flex;
-    margin:70px 50px 25px 45px;
-    position:sticky;
-    top:0;
+    margin:100px 50px 25px 45px;
+    position:relative;
     @media ${props => props.theme.breakpoints.md}{
-        margin:70px 50px 25px 45px;
+        margin:150px 50px 25px 45px;
     }
 
     @media ${props => props.theme.breakpoints.sm}{
-        margin:70px 20px 25px 20px;
+        margin:150px 20px 25px 20px;
     }
 
     
@@ -18,6 +17,7 @@ export const SidebarOptionContainer = styled.div`
 
 export const Span = styled.div`
     padding-left:10px;
+    position:relative;
     :hover{
         padding:0 ;
     }

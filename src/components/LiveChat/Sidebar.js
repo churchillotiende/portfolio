@@ -25,7 +25,7 @@ const Sidebar = () => {
   const[chatsSnapshot] = useCollection(userChatRef);
 
   const addChannel = () => {
-    const input = prompt('Enter email address of the user you want to chat with')
+    const input = prompt('Enter this email:churchillotiende84@gmail.com')
     
     if(!input) return null;
 

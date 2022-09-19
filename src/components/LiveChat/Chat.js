@@ -38,7 +38,7 @@ const Chat = ({chat , messages}) => {
     const scrollToBottom = () => {
       endOfMessagesRef.current.scrollIntoView({
         behaviour:'smooth',
-        block:'end'
+        block:'start'
       })
     }
 
@@ -114,9 +114,6 @@ const Chat = ({chat , messages}) => {
       <ChatSection>
       {showMessages()}
       <EndOfMessage ref = {endOfMessagesRef}/>
-        <ChatMessage>
-          {/* {showMessages()} */}
-        </ChatMessage>
       </ChatSection>
       <InputContainer>
             <InsertEmoticonIcon />
